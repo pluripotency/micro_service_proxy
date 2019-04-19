@@ -1,0 +1,35 @@
+{
+  "name": "micro_service_proxy",
+  "version": "1.0.0",
+  "description": "node.js micro service proxy by express",
+  "main": "js/server/app.js",
+  "scripts": {
+    "coffee": "coffee -cwb -o js src",
+    "devel": "gulp",
+    "production": "coffee -cb -o js src && node js/server/app.js"
+  },
+  "keywords": [
+    "microservices",
+    "proxy",
+    "gateway",
+    "api",
+    "rest",
+    "rest api"
+  ],
+  "author": "Masayoshi Kokuryo",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "coffeescript": "^2.4.1",
+    "config": "^3.1.0",
+    "connect-redis": "^3.4.1",
+    "express": "^4.16.4",
+    "express-session": "^1.16.1",
+    "lodash": "^4.17.11",
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-nodemon": "^2.4.2"
+  }
+}
